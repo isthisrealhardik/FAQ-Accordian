@@ -1,0 +1,121 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+/* 400, 700 */
+
+:root {
+    /* primary colors */
+    --veryDarkDesatBlue: hsl(238, 29%, 16%);
+    --softRed: hsl(14, 88%, 65%);
+
+    /* background gradient */
+    --softViolet: #af67e9;
+    --softBlue: #6565e7;
+
+    /* neutral color for text */
+    --veryDarkGrayishBlue: hsl(237, 12%, 33%);
+    --darkGrayishBlue: hsl(240, 6%, 50%);
+
+    /* divider color */
+    --lightGrayishBlue: hsl(240, 5%, 91%);
+
+    /* primary font size */
+    --primaryFontSize: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: var(--primaryFontSize);
+    background: rgb(101,101,231);
+    background: linear-gradient(0deg, rgba(101,101,231,1) 0%, rgba(175,103,233,1) 100%);
+    font-family: 'Kumbh Sans';
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: white;
+    height: 70%;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 0px 15px 20px 5px rgba(0,0,0,0.2);
+    display: flex;
+
+}
+.container-img {
+    /* background-color: yellow; */
+    overflow: hidden;
+    width: 50vw;
+    /* position: absolute; */
+}
+.women-image {
+    height: 115%;
+    width: 115%;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+    left: -80px;
+    top: -825px;
+}
+.pattern-image {
+    width: 800px;
+    position: relative;
+    left: -460px;
+    top: -200px;
+    z-index: 1;
+}
+.box-image {
+    position: absolute;
+    z-index: 3;
+    left: 195px;
+    top: 280px;
+    width: 150px;
+    overflow: visible;
+}
+.container-faq {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 50vw;
+}
+h1 {
+    color: var(--veryDarkDesatBlue);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+button {
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: all 0.7s;
+}
+.container-faq-box {
+    border-bottom: 1px solid var(--lightGrayishBlue);
+    /* margin: 10px 0px; */
+    padding: 10px 0px;
+}
+h3 {
+    font-size: 0.8rem;
+    color: var(--veryDarkGrayishBlue);
+    font-weight: 700;
+    word-spacing: 1px;
+    margin: 5px 0px;
+}
+p {
+    font-size: 0.7rem;
+    color: var(--darkGrayishBlue);
+    display: none;
+}
+.icon {
+    margin: 0px 5px;
+}
